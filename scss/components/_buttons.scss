@@ -11,18 +11,19 @@
     text-transform: uppercase;
     border-radius: 5px;
 
-    @media #{$break} {
+    @include mq($break) {
       padding: 10px 30px;
     }
-  }
 
-  .btn + .btn {
+    & + .btn {
 
-    @media #{$break} {
-      margin-left: 10px;
+      @include mq($break) {
+        margin-left: 10px;
+      }
+      
     }
-    
   }
+
   
   .default {
     background-color: #51ddfc;

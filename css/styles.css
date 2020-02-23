@@ -11,6 +11,9 @@
 /*               Media Query Breakpoints         */
 /* ============================================= */
 /* ============================================= */
+/*                Media Query Mixin              */
+/* ============================================= */
+/* ============================================= */
 /* Base Imports */
 /* ============================================= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -412,13 +415,12 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .btn {
     padding: 10px 30px;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .btn + .btn {
     margin-left: 10px;
   }
@@ -478,14 +480,13 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -494,12 +495,11 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .nav-link {
     flex-basis: 100px;
   }
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -533,7 +533,7 @@ a {
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .logo {
     margin-left: initial;
     margin-right: initial;
@@ -546,7 +546,7 @@ a {
 .container {
   padding: 0 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .container {
     max-width: 1400px;
     display: block;
@@ -555,7 +555,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .centered {
     display: block;
     margin-left: auto;
@@ -568,7 +568,7 @@ a {
   flex-direction: column;
   padding: 1em 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   .row {
     flex-direction: row;
   }
@@ -581,7 +581,7 @@ a {
   padding: 10px;
   border-radius: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   [class^=col] {
     display: flex;
     justify-content: center;
@@ -590,7 +590,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: (min-width: 768px)) {
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
