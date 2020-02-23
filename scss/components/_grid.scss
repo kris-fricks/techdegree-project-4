@@ -47,6 +47,13 @@
       align-items: center;
     }
   }
+
+  [class^=col] + [class^=col] {
+
+    @media #{$break} {
+      margin-left: 10px;
+    }
+  }
   
   .theme.col-1 {
     background-color: #927bc1;

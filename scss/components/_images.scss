@@ -26,4 +26,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .logo {
+
+    @media #{$break} {
+      margin-left: initial;
+    margin-right: initial;
+    }
+  }
   
