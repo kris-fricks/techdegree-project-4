@@ -12,13 +12,13 @@
     border-radius: 5px;
     transition: .2s, ease-in-out;
 
-    @include mq($break) {
+    @include mq {
       padding: 10px 30px;
     }
 
     & + .btn {
 
-      @include mq($break) {
+      @include mq {
         margin-left: 10px;
       }
       

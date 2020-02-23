@@ -5,7 +5,7 @@
 .container {
     padding: 0 10px;
 
-    @include mq($break) {
+    @include mq {
       max-width: 1400px;
       display: block;
       margin-left: auto;
@@ -15,7 +15,7 @@
 
   .centered {
 
-    @include mq($break) {
+    @include mq {
       display: block;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +27,7 @@
     flex-direction: column;
     padding: 1em 10px;
 
-    @include mq($break) {
+    @include mq {
       flex-direction: row;
     }
   }
@@ -40,7 +40,7 @@
     padding: 10px;
     border-radius: 5px;
 
-    @include mq($break) {
+    @include mq {
       display: flex;
       justify-content: center;
       margin-top: 0;
@@ -50,7 +50,7 @@
 
   [class^=col] + [class^=col] {
 
-    @include mq($break) {
+    @include mq {
       margin-left: 10px;
     }
   }

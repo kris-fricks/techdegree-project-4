@@ -29,7 +29,7 @@
 
   .logo {
 
-    @include mq($break) {
+    @include mq {
       margin-left: initial;
     margin-right: initial;
     }
