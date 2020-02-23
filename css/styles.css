@@ -8,7 +8,7 @@
 /*               Colors                          */
 /* ============================================= */
 /* ============================================= */
-/*               Media Query Breakpoint          */
+/*               Media Query Breakpoints         */
 /* ============================================= */
 /* ============================================= */
 /* Base Imports */
@@ -412,6 +412,11 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -467,6 +472,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -475,6 +487,11 @@ a {
   display: block;
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 .nav-link:hover {
@@ -516,7 +533,6 @@ a {
 .container {
   padding: 0 10px;
 }
-
 .row {
   display: flex;
   flex-direction: column;
@@ -587,30 +603,6 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
@@ -661,20 +653,6 @@ a {
 
   .col-12 {
     flex-basis: 100%;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
-  }
-
-  .btn {
-    padding: 10px 30px;
   }
 
   .btn + .btn {
