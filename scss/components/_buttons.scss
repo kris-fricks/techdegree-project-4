@@ -10,7 +10,7 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
-    transition: .2s, ease-in-out;
+    transition: .4s, ease-in-out;
 
     @include mq($break) {
       padding: 10px 30px;
@@ -24,10 +24,9 @@
       
     }
 
-    &:hover {
-      background-color: $color-primary-light;
-      
-    }
+    // &:hover {
+    //   background-color: lighten($btn-color, 15%);
+    // }
   }
 
   
