@@ -11,6 +11,14 @@
     text-transform: uppercase;
     border-radius: 5px;
     transition: .4s, ease-in-out;
+    @each $key, $color in $btn-map {
+      &.#{$key} {
+        background-color: $color;
+        &:hover {
+          background-color: lighten($color, 15%);
+        }
+      }
+    }
 
     @include mq($break) {
       padding: 10px 30px;
@@ -23,15 +31,11 @@
       }
       
     }
-
-    // &:hover {
-    //   background-color: lighten($btn-color, 15%);
-    // }
   }
 
   
   .default {
-    background-color: #51ddfc;
+    background-color: $color-secondary;
   }
   
   .error {
